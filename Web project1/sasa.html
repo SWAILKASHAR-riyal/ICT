@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMS Studio - Fashion Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="nav.css">
+    <style>
+        :root {
+            --primary-beige: #FFF5EB;
+            --accent-orange: #E86C1C;
+            --text-dark: #2C2C2C;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--primary-beige);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .purpose-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fff5eb 0%, #fff 100%);
+        }
+
+        .section-title {
+            color: var(--accent-orange);
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-orange);
+        }
+
+        .purpose-text {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            padding: 0 20px;
+            color: #4a4a4a;
+        }
+
+        .designs-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px var(--shadow);
+            text-align: center;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            margin: 15px 0;
+            color: var(--text-dark);
+            font-weight: 500;
+            min-height: 48px;
+        }
+
+        .product-price {
+            color: var(--accent-orange);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .product-card {
+                margin-bottom: 20px;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .purpose-text {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">KMS Studio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Men's</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Women's</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+        </ul>
+        <div class="nav-icons">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <section class="purpose-section">
+        <div class="container">
+            <h2 class="section-title">OUR PURPOSE</h2>
+            <p class="purpose-text">
+                KMS Studio is a creative powerhouse dedicated to delivering exceptional design and digital solutions. We specialize in crafting unique experiences that resonate with audiences and elevate brands. With a team of skilled professionals, we blend innovation with precision to turn ideas into impactful results. At KMS Studio, we focus on collaboration, quality, and creativity, ensuring that every project exceeds expectations and leaves a lasting impression.
+            </p>
+        </div>
+    </section>
+
+    <section class="designs-section">
+        <div class="container">
+            <h2 class="section-title">TOP DESIGNS</h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <img src="pro.3.jpg" alt="Heels" class="product-image">
+                        <h3 class="product-title">Heels - Stylish Women Footwear</h3>
+                        <p class="product-price">Rs.3,590.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <img src="pro.1.jpg" alt="Flats" class="product-image">
+                        <h3 class="product-title">Flats - Comfortable Women Footwear</h3>
+                        <p class="product-price">Rs.2,990.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <img src="Heels.jpg" alt="Heels" class="product-image">
+                        <h3 class="product-title">Heels - Elegant Women Footwear</h3>
+                        <p class="product-price">Rs.3,990.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <img src="product.9.jpg" alt="Sandals" class="product-image">
+                        <h3 class="product-title">Sandals - Trendy Women Footwear</h3>
+                        <p class="product-price">Rs.2,299.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <img src="prod12.jpg" alt="Slippers" class="product-image">
+                        <h3 class="product-title">Slippers - Casual Women Footwear</h3>
+                        <p class="product-price">Rs.4,599.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <img src="product 9.jpg" alt="Boots" class="product-image">
+                        <h3 class="product-title">Boots - Winter Women Footwear</h3>
+                        <p class="product-price">Rs.5,599.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <img src="product 8.jpg" alt="Loafers" class="product-image">
+                        <h3 class="product-title">Loafers - Everyday Women Footwear</h3>
+                        <p class="product-price">Rs.3,590.00</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card">
+                        <img src="pro.1.jpg" alt="Sneakers" class="product-image">
+                        <h3 class="product-title">Sneakers - Sporty Women Footwear</h3>
+                        <p class="product-price">Rs.2,990.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Brand Section -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h3>KMS Studio</h3>
+                <p>Crafting exceptional design and digital solutions that elevate brands and create lasting impressions.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Men's Collection</a></li>
+                    <li><a href="#">Women's Collection</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Returns & Exchange</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Design District, City</li>
+                    <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                    <li><i class="fas fa-envelope"></i> contact@kmsstudio.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 KMS Studio. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="me-3">Privacy Policy</a>
+                    <a href="#" class="me-3">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fbe5d6; /* Light peach background */
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8c9b6; /* Peach navigation bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .logo img {
+    height: 50px;
+    cursor: pointer;
+  } */
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color:black; /* Brown text for contrast */
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #fff; /* White on hover */
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    color:black; /* Brown icon color */
+    cursor: pointer;
+  }
+  
+  .nav-icons i:hover {
+    color: #fff; /* White on hover */
+  }
+
+ /* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2{
+    font-weight: 500;
+    color: chocolate;
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
+/* Navigation Bar */
+.navbar {
+    background:papayawhip;
+    padding: 1rem 2rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #f4b400;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#sect1{
+    background-image: url(https://pk.sapphireonline.pk/cdn/shop/files/unstitched-slider-banner_f5acaefd-3abc-4b64-bd61-4baa09f9bc44.jpg?v=1733740033&width=2000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.dark-opacity
+{
+  background-image: url(https://pk.sapphireonline.pk/cdn/shop/files/unstitched-slider-banner_f5acaefd-3abc-4b64-bd61-4baa09f9bc44.jpg?v=1733740033&width=2000);
+   background-color: peachpuff;
+    height: 100%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+#sect2{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.border{
+    border-top: 2px solid black;
+    width: 70px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+#purpose-text
+{
+    background-color: papayawhip;
+    font-size:  18px;
+    font-weight: 300;
+    padding: 3rem;
+    border-radius: 5px;
+    margin-left: 4rem;
+    margin-right:4rem ;
+    box-shadow: 0 1px 5px black;
+    width: calc(100% - 300px);
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+#sect3{
+  text-align: center;
+  margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+/* .container {
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  overflow: auto;
+  box-shadow: 0 2px 5px black;
+  transition: 0.5s;
+} */
+
+.design-profile {
+  margin: 5px;
+  border: 1px solid peachpuff;
+  float: left;
+  width: 355px;
+  box-shadow: 0 2px 5px black;
+  transition: 0.5s;
+  
+}
+
+.design-profile img{
+ width: 100%;
+ height: auto;
+ /* box-shadow: 0 2px 5px black; */
+  transition: 0.5s;
+}
+
+.style {
+  padding: 15px;
+  text-align: center;
+
+}
+
+.style1 {
+  padding: 15px;
+  text-align: center;
+}
